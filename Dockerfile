@@ -6,12 +6,6 @@ RUN apt-get update \
  && sudo apt-get install -y \
     chromium-browser \
  && sudo rm -rf /var/lib/apt/lists/* \
- && apt-get install -y \
-  apt-utils \
-  sudo \
-  git \
-  less \
-  wget
 
 RUN mkdir -p /workspace/data \
     && chown -R gitpod:gitpod /workspace/data
