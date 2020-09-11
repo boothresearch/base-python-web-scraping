@@ -15,6 +15,7 @@ export SHELL=/bin/bash
 
 #Install required packages specified in requirements.txt
 # conda install -y --file requirements.txt
+conda activate /workspace/conda/arcw
 pip install -r requirements.txt
 
 echo Done...
