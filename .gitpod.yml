@@ -2,5 +2,5 @@ image:
   file: Dockerfile
 tasks:
 - init: pyenv global 3.8.5 &&
-           chmod +x envconfig.sh &&
-           ./envconfig.sh
+           chmod +x start &&
+           ./start
