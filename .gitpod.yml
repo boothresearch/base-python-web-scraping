@@ -1,6 +1,6 @@
 image:
   file: Dockerfile
 tasks:
-- init: pyenv global 3.7.6 &&
+- init: pyenv global 3.8.5 &&
            chmod +x envconfig.sh &&
            ./envconfig.sh

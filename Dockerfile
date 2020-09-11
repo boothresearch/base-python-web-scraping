@@ -3,6 +3,9 @@ FROM gitpod/workspace-full:latest
 USER root
 # Install util tools.
 RUN apt-get update \
+ && sudo apt-get install -y \
+    chromium-browser \
+ && sudo rm -rf /var/lib/apt/lists/* \
  && apt-get install -y \
   apt-utils \
   sudo \
