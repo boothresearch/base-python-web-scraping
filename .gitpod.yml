@@ -3,4 +3,4 @@ image:
 tasks:
 - init: pyenv global 3.8.5 &&
            chmod +x start &&
-           ./start
+           bash -i ./start
