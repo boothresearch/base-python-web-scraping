@@ -14,6 +14,6 @@ source ~/.bashrc
 export SHELL=/bin/bash
 
 #Install required packages specified in requirements.txt
-conda install -r requirements.txt
+conda install -y --file requirements.txt
 
 echo Done...
