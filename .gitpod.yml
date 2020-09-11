@@ -1,10 +1,6 @@
 image:
   file: Dockerfile
-ports:
-- port: 8050
-  onOpen: open-preview
-- port: 8888
-  onOpen: open-browser
 tasks:
-- command: pyenv global 3.7.6 &&
-           chmod +x envconfig.sh 
+- init: pyenv global 3.7.6 &&
+           chmod +x envconfig.sh &&
+           ./envconfig.sh
