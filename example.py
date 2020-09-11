@@ -16,14 +16,23 @@ from selenium.webdriver.common.keys import Keys
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
-# from tabulate import tabulate
-# import os
+from tabulate import tabulate
+import os
 
 #launch url
 url = "http://kanview.ks.gov/PayRates/PayRates_Agency.aspx"
 
 # create a new Chrome session
-driver = webdriver.Chrome()
+
+# Gitpod chrome flags
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--disable-gpu')
+# ------------------
+
+
+driver = webdriver.Chrome(executable_path='/usr/bin/chromedriver/chromedriver', options=chrome_options)
 driver.implicitly_wait(30)
 driver.get(url)
 
