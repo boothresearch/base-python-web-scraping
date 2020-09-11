@@ -5,7 +5,7 @@ USER root
 RUN apt-get update \
  && sudo apt-get install -y \
     chromium-browser \
- && sudo rm -rf /var/lib/apt/lists/* \
+ && sudo rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p /workspace/data \
     && chown -R gitpod:gitpod /workspace/data
